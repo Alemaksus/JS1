@@ -9,118 +9,36 @@
         <body>
 
             <script>
-/*            task1 () 
 
-             var a = 1, b = 1, c, d;
-                 c = ++a; alert(c);           // 2 - префикс увеличил значение и вывел результат
-                 d = b++; alert(d);           // 1 - постфикс сразу вывела результат и только посто увеличила его
-                 c = (2+ ++a); alert(c);      // 5 - по поему должно быть 4, а не 5. Я не знаю почему тут 5
-                 d = (2+ b++); alert(d);      // 4 - постфикс, поэтому 2+2=4
-                 alert(a);                    // 3 - загадка
-                 alert(b);                    // 3 - загадка
-*/
- //            task2 () 
+//task1 ht 3 
 
-//             var a = 2;
-//            var x = 1 + (a *= 2); // 5 - т.к. 1+(2*2)
-          
- //            task3 () 
- 
-                var a = prompt ('Введите a')
-                    b = prompt ('Введите b')
-                   
-                if (a > 0 && b > 0) {
-                    console.log (a - b)
+    var massive = [2]
+     num = 2
+        while (num <= 100) {
+        var numcheck = 1
+
+            for (var i = 0; i < massive.length; i++) {
+                if (num % massive [i] === 0) {
+                    numcheck = 0
                 }
-                
-                else (a < 0 && b < 0) {
-                    console.log  (a * b)
                 }
 
-                else {
-                    console.log (a + b)
+            if (numcheck === 1) {
+                massive.push (num)
                 }
-                
-                 // Почему то не работает if - я не знаю :(            
+                  
+            num++
+            }
 
-//            task4 () 
+        console.log (massive)       
 
-                var a = 5;
-                    switch (a) {
-                        case 0:
-                            console.log ('0')
-                        case 1:
-                            console.log ('1')
-                        case 2:
-                            console.log('2')
-                        case 3:
-                            console.log('3')
-                        case 4:
-                            console.log('4')
-                        case 5:
-                            console.log('5')
-                        case 6:
-                            console.log('6')
-                        case 7:
-                            console.log('7')
-                        case 8:
-                            console.log('8')
-                        case 9:
-                            console.log('9')
-                        case 10:
-                            console.log('10')
-                        case 11:
-                            console.log('11')
-                        case 12:
-                            console.log('12')
-                        case 13:
-                            console.log('13')
-                        case 14:
-                            console.log('14')
-                        case 15:
-                            console.log('15')
-                    
-                        }                  
+//task4 ht 3 
 
-//            task5 () 
-
-                        var a = 5;
-                        var b = 4;
-                
-                        function 1 (a, b) {
-                            return a + b
-                        }
-                
-                        function 2 (a, b) {
-                            return a - b
-                        }
-                
-                        function 3 (a, b) {
-                            return a / b;
-                        }
-                
-                        function 4 (a, b) {
-                            return a + b;
-                        }          
-
-//            task6 () 
-
-function mathOperation(arg1, arg2, operation){
-                            switch(operation){
-                                case '+':
-                                    return arg1 + arg2;
-                                    break;
-                                case '-':
-                                    return arg1 - arg2;
-                                    break;
-                                case '*':
-                                    return arg1 * arg2;
-                                    break;
-                                case '/':
-                                    return arg1 / arg2;
-                                    break;
-                            }
-                        }           
+var x = '\nx';
+for ( var i = 20; i--; ) {
+    console.log (x)
+    x = x + 'x'
+}
 
             </script>
         </body>
