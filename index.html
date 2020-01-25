@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>JavaScript1</title>
+        </head >
+        <body>
+
+            <script>
+
+//task1 ht 3 
+
+    var massive = [2]
+     num = 2
+        while (num <= 100) {
+        var numcheck = 1
+
+            for (var i = 0; i < massive.length; i++) {
+                if (num % massive [i] === 0) {
+                    numcheck = 0
+                }
+                }
+
+            if (numcheck === 1) {
+                massive.push (num)
+                }
+                  
+            num++
+            }
+
+        console.log (massive)       
+
+//task4 ht 3 
+
+var x = '\nx';
+for ( var i = 20; i--; ) {
+    console.log (x)
+    x = x + 'x'
+}
+
+            </script>
+        </body>
+        </html>
